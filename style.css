@@ -1,0 +1,30 @@
+body {
+  background: #111;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+input {
+  width: 250px;
+  border: none;
+}
+button {
+  background: #ff4444;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.movie {
+  background: #222;
+  text-align: center;
+}
+.movie img {
+  width: 100%;
+}
