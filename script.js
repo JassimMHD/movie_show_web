@@ -36,7 +36,7 @@ async function fetchMovies(query) {
 }
 
 
-fetchMovies('Batman');
+fetchMovies('Comedy');
 
 
 searchBtn.addEventListener('click', () => {
