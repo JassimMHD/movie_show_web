@@ -1,30 +1,80 @@
 body {
-  background: #111;
-  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(8, 27, 90);
+  color: #fff;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
-h1 {
-  margin-bottom: 20px;
-}
-input {
-  width: 250px;
-  border: none;
-}
-button {
-  background: #ff4444;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-.movie-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.movie {
-  background: #222;
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
   text-align: center;
 }
-.movie img {
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.search-box {
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #a4928c;
+  color: white;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.movie-card {
+  background: darkmagenta;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-card img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid hsl(0, 60%, 7%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 50px auto;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -3,15 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Show Web</title>
+    <title>Movie Show App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Movie Show Web</h1>
-    <input type="text" id="movieInput" placeholder="Enter movie name..." />
-    <button onclick="getMovies()">Search</button>
+    <div class="container">
+      <h1>Movie Show</h1>
 
-    <div class="movie-container" id="movieContainer"></div>
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a movie..."
+        />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <div id="loader" class="loader"></div>
+
+      <div id="movie-container" class="movie-container"></div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
